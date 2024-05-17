@@ -2,7 +2,7 @@ import pandas as pd
 import sqlite3
 
 # Leer el archivo de Excel con la hoja de artículos
-file_path = 'D:\ID04548\Desktop\JA\FULL DATABASE READY TO USE.xlsx'
+file_path = '\FULL DATABASE READY TO USE.xlsx'
 articles_data = pd.read_excel(file_path, sheet_name='articulos')  # Ajustar 'Sheet1' al nombre de la hoja de artículos
 
 # Conectar a la base de datos SQLite (se creará si no existe)
