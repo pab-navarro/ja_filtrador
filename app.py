@@ -47,7 +47,7 @@ def get_filtered_data(filters):
     return df
 
 # Título de la aplicación
-st.markdown("<h1 style='text-align: center;'>Filtrador de Artículos</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Article Filter</h1>", unsafe_allow_html=True)
 st.markdown("<br>", unsafe_allow_html=True)
 
 # Obtener las opciones de filtrado desde las tablas
@@ -63,15 +63,15 @@ col3, col4 = st.columns(2)
 col5 = st.columns(1)
 
 with col1:
-    selected_appointments = st.multiselect('Selecciona el número de citas:', appointment_options['Appointment'], placeholder='Elige una opción')
+    selected_appointments = st.multiselect('Selecciona el número de citas:', appointment_options['Appointment'])
 with col2:
-    selected_years = st.multiselect('Selecciona el año:', year_options['Year'], placeholder='Elige una opción')
+    selected_years = st.multiselect('Selecciona el año:', year_options['Year'])
 with col3:
-    selected_area_of_knowledges = st.multiselect('Selecciona el área de conocimiento:', area_of_knowledge_options['Code_Area_of_Knowledge'], placeholder='Elige una opción')
+    selected_area_of_knowledges = st.multiselect('Selecciona el área de conocimiento:', area_of_knowledge_options['Code_Area_of_Knowledge'])
 with col4:
-    selected_keywords = st.multiselect('Selecciona la palabra clave:', keyword_options['Keyword'], placeholder='Elige una opción')
+    selected_keywords = st.multiselect('Selecciona la palabra clave:', keyword_options['Keyword'])
 with col5[0]:
-    selected_jcr_ranks = st.multiselect('Selecciona el rango JCR:', jcr_rank_options['JCR_RANK'], placeholder='Elige una opción')
+    selected_jcr_ranks = st.multiselect('Selecciona el rango JCR:', jcr_rank_options['JCR_RANK'])
 
 # Obtener los códigos seleccionados
 filters = {
