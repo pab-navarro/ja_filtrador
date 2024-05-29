@@ -63,15 +63,15 @@ col3, col4 = st.columns(2)
 col5 = st.columns(1)
 
 with col1:
-    selected_appointments = st.multiselect('Selecciona el número de citas:', appointment_options['Appointment'])
+    selected_appointments = st.multiselect('Select the number of appointments:', appointment_options['Appointment'])
 with col2:
-    selected_years = st.multiselect('Selecciona el año:', year_options['Year'])
+    selected_years = st.multiselect('Select the year:', year_options['Year'])
 with col3:
-    selected_area_of_knowledges = st.multiselect('Selecciona el área de conocimiento:', area_of_knowledge_options['Code_Area_of_Knowledge'])
+    selected_area_of_knowledges = st.multiselect('Select the knowledge area:', area_of_knowledge_options['Code_Area_of_Knowledge'])
 with col4:
-    selected_keywords = st.multiselect('Selecciona la palabra clave:', keyword_options['Keyword'])
+    selected_keywords = st.multiselect('Select the Keyword:', keyword_options['Keyword'])
 with col5[0]:
-    selected_jcr_ranks = st.multiselect('Selecciona el rango JCR:', jcr_rank_options['JCR_RANK'])
+    selected_jcr_ranks = st.multiselect('Select the JCR rank:', jcr_rank_options['JCR_RANK'])
 
 # Obtener los códigos seleccionados
 filters = {
